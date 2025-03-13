@@ -78,48 +78,45 @@ footer {
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
 }
 
-/* Secciones */
-.intro, .instrucciones {
+/* Área del juego */
+.juego {
     text-align: center;
-    max-width: 700px;
-    background: rgba(255, 255, 255, 0.1); /* Fondo transparente blanco */
-    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 2rem;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    max-width: 600px;
+    margin: 2rem auto;
 }
 
-.intro h1, .instrucciones h1, .instrucciones h2 {
-    margin-bottom: 1.5rem;
-    color: #ffeb3b; /* Amarillo vibrante */
-    font-size: 2rem;
-    text-transform: uppercase;
-}
-
-.intro p, .instrucciones p {
-    margin-bottom: 1rem;
-    font-size: 1.1rem;
-}
-
-.instrucciones ul {
-    list-style: none;
-    padding: 0;
+/* Desafíos */
+#area-juego p {
+    font-size: 1.2rem;
     margin-bottom: 1rem;
 }
 
-.instrucciones ul li {
+#input-desafio {
     padding: 0.5rem;
     font-size: 1rem;
-    background: rgba(0, 0, 0, 0.6);
-    margin-bottom: 0.5rem;
+    border: 2px solid #4caf50;
     border-radius: 5px;
-    color: #fff;
 }
 
-/* Imágenes */
-img {
-    max-width: 100%;
+#boton-desafio {
+    background: linear-gradient(to right, #ff5722, #ff7043); /* Gradiente naranja */
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+#boton-desafio:hover {
+    background: #e64a19; /* Oscurecer el naranja */
+}
+
+#puntuacion, #contador-tiempo {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 1rem 0;
 }
 
 /* Responsivo */
@@ -133,7 +130,11 @@ img {
         padding: 0.5rem 1rem;
     }
 
-    .intro, .instrucciones {
+    .juego {
         padding: 1rem;
+    }
+
+    #boton-desafio {
+        font-size: 1.2rem;
     }
 }

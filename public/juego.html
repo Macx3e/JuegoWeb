@@ -3,15 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Juego - Juego Web</title>
+  <title>Juego - Completa los Desafíos</title>
   <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
   <header>
-    <h1>Juego en Progreso</h1>
+    <h1>Completa los Desafíos</h1>
   </header>
   <main>
-    <p>¡Aquí comienza la diversión del juego!</p>
+    <div id="area-juego" class="juego">
+      <p id="desafio">Prepárate para el primer desafío...</p>
+      <button id="boton-desafio" class="btn" style="display: none;">¡Haz clic aquí!</button>
+      <input id="input-desafio" style="display: none;" placeholder="Escribe la letra correcta">
+    </div>
+    <p>Puntuación: <span id="puntaje">0</span></p>
+    <p>Tiempo restante: <span id="tiempo">30</span>s</p>
     <div class="botones">
       <a href="index.html" class="btn">Volver al Inicio</a>
     </div>
@@ -19,5 +25,8 @@
   <footer>
     <p>© 2025 Juego Web. Todos los derechos reservados.</p>
   </footer>
+
+  <!-- Enlace al archivo JavaScript -->
+  <script src="js/completarDesafios.js"></script>
 </body>
 </html>

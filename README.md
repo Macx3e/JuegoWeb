@@ -1,1 +1,1 @@
-Este es un proyecto de una aplicación web interactiva desarrollada con HTML, CSS, y JavaScript utilizando React para la lógica y Node.js en el backend. El juego busca proporcionar una experiencia divertida y educativa, permitiendo a los usuarios disfrutar mientras se retan a sí mismos.
+Este es un proyecto de una aplicación web interactiva desarrollada con HTML, CSS, y JavaScript utilizando React para la lógica y Node.js en el backend. El juego busca proporcionar una experiencia divertida, permitiendo a los usuarios disfrutar mientras se retan a sí mismos.

@@ -6,19 +6,26 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Poppins', sans-serif;
     line-height: 1.6;
-    background: linear-gradient(to right, #d4fc79, #96e6a1); /* Fondo degradado en tonos verdes y frescos */
-    color: #333;
+    background: linear-gradient(to bottom right, #1e3c72, #2a5298); /* Fondo degradado azul profundo */
+    color: #f5f5f5;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 /* Estructura general */
 header {
     text-align: center;
-    padding: 1rem;
-    background-color: #6200ea; /* Fondo morado oscuro */
-    color: white;
+    padding: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.6); /* Transparente negro */
+    color: #f5f5f5;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-bottom: 2px solid #4caf50; /* Línea decorativa */
 }
 
 main {
@@ -26,55 +33,107 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 1.5rem;
+    gap: 2rem;
+    animation: fade-in 1.5s ease; /* Animación de entrada */
 }
 
 footer {
     text-align: center;
     padding: 1rem;
-    background-color: #333;
-    color: white;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #f5f5f5;
+    font-size: 0.9rem;
+}
+
+/* Animaciones */
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* Botones */
 .btn {
     padding: 0.75rem 1.5rem;
-    font-size: 1rem;
-    color: white;
-    background-color: #6200ea;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(to right, #4caf50, #81c784); /* Gradiente verde */
     border: none;
-    border-radius: 5px;
+    border-radius: 30px;
     text-decoration: none;
     text-align: center;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 .btn:hover {
-    background-color: #4500b3; /* Oscurece el morado en hover */
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
 }
 
-/* Sección de introducción e instrucciones */
+/* Secciones */
 .intro, .instrucciones {
     text-align: center;
-    max-width: 800px;
+    max-width: 700px;
+    background: rgba(255, 255, 255, 0.1); /* Fondo transparente blanco */
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-.intro p, .instrucciones p, .instrucciones ul {
+.intro h1, .instrucciones h1, .instrucciones h2 {
+    margin-bottom: 1.5rem;
+    color: #ffeb3b; /* Amarillo vibrante */
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.intro p, .instrucciones p {
     margin-bottom: 1rem;
+    font-size: 1.1rem;
 }
 
 .instrucciones ul {
-    list-style: inside square;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1rem;
 }
 
-/* Espaciado entre botones */
-.botones {
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
+.instrucciones ul li {
+    padding: 0.5rem;
+    font-size: 1rem;
+    background: rgba(0, 0, 0, 0.6);
+    margin-bottom: 0.5rem;
+    border-radius: 5px;
+    color: #fff;
+}
+
+/* Imágenes */
+img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    header {
+        font-size: 1.5rem;
+    }
+
+    .btn {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .intro, .instrucciones {
+        padding: 1rem;
+    }
 }
